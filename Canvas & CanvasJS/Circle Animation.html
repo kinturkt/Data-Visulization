@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title> Animation Of A Circle </title>
+</head>
+<body>
+    <canvas id="myCanvas" width="300" height="300">
+    Browser Not Supported
+    </canvas>
+
+    <script type="text/javascript">
+        var canvas=document.getElementById("myCanvas");
+        var ctx=canvas.getContext('2d');
+
+        // Initially all the variables are set.
+        var radius=70;
+        var cx=cy=150;
+        var angle=0;
+        var newAngle=0;
+
+        function drawCircle()
+        {
+            ctx.clearRect(0,0,canvas.width,canvas.height);   // Erase the canvas
+            ctx.beginPath();
+            ctx.lineWidth=10;                  // width of the circle.
+            ctx.arc(cx,cy,radius,0,newAngle*Math.PI);
+            ctx.strokeStyle="green";    // border of circle is set to green color.
+            ctx.stroke();              // It can be filled using fillStyle property used with fill() method.
+        }
+
+        function go()
+        {
+            if (angle<200)   // Single max.angle is 2*PI, we use 2 for 200 divisions.
+            {
+                angle=angle+10;
+                newAngle=angle*.01;
+                requestAnimationFrame(drawCircle);       // function drawCircle is called here.
+            }
+        }
+        requestAnimationFrame(drawCircle)           // To call for drawing a circle (fun drawCircle called).
+        setInterval(go,1000/20)                     // To call for some frequency (fun go called).
+
+    </script>
+</body>
+</html>

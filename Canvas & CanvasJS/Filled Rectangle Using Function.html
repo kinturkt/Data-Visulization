@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title> Filled Rectangle </title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<!-- As we are using function of JS, it is always written in the head section of HTML, & function is called ine the body section.-->
+
+    <script type="text/javascript">
+        
+        function drawCanvas()
+        {
+            var theChart=document.getElementById('chart1');
+            if (theChart.getContext)
+            {
+                var theContext=theChart.getContext('2d');
+                theContext.fillRect(50,200,100,200);
+            }
+        }
+    </script>   
+    </head>
+ 
+    <body onload="drawCanvas();">       <!-- As we used function drawCanvas(), write onload="function_name"; in body tag -->
+
+        <canvas id="chart1" width="600" height="400">
+            Your Browser is not supporting the canvas tag. Update your browser.
+        </canvas>
+    
+    </body>
+</html>

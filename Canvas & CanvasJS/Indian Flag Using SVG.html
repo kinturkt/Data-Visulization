@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>SVG shapes in D3</title>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+</head>
+
+<body>
+    <script>
+        var mySvg = d3.select('body')
+            .append('svg')
+            .attr('width', 300)
+            .attr('height', 300);
+        mySvg.append('rect')
+            .attr("x", 0)
+            .attr("y", 0)
+            .attr("width", 300)
+            .attr("height", 100)
+            .attr("fill","red");
+        mySvg.append('rect')
+            .attr("x", 100)
+            .attr("y", 100)
+            .attr("width", 300)
+            .attr("height", 100)
+            .attr("fill", "white");
+            
+        mySvg.append('rect')
+            .attr("x", 0)
+            .attr("y", 200)
+            .attr("width", 300)
+            .attr("height", 100)
+            .attr("fill","green"); 
+
+         mySvg.append('circle')
+            .attr("cx", 150)
+            .attr("cy", 150)
+            .attr("r", 48)
+            .attr("fill", "white")
+            .attr("stroke", "black")
+            .attr("stroke-width", 1);
+
+        mySvg.append('line')
+            .attr("x1",150)
+            .attr("y1",150)
+            .attr("x2",150)
+            .attr("y2",198)
+            .attr("stroke","black")
+            .attr("stroke-width",1);
+        mySvg.append('line')
+            .attr("x1",150)
+            .attr("y1",150)
+            .attr("x2",150)
+            .attr("y2",102)
+            .attr("stroke","black")
+            .attr("stroke-width",1);
+        mySvg.append('line')
+            .attr("x1",150)
+            .attr("y1",150)
+            .attr("x2",101)
+            .attr("y2",148)
+            .attr("stroke","black")
+            .attr("stroke-width",1);
+        mySvg.append('line')
+            .attr("x1",150)
+            .attr("y1",150)
+            .attr("x2",198)
+            .attr("y2",150)
+            .attr("stroke","black")
+            .attr("stroke-width",1);
+
+        mySvg.append('line')
+            .attr("x1",150)
+            .attr("y1",150)
+            .attr("x2",138)
+            .attr("y2",104)
+            .attr("stroke","black")
+            .attr("stroke-width",1);
+        mySvg.append('line')
+            .attr("x1",150)
+            .attr("y1",150)
+            .attr("x2",124)
+            .attr("y2",109)
+            .attr("stroke","black")
+            .attr("stroke-width",1);
+        mySvg.append('line')
+            .attr("x1",150)
+            .attr("y1",150)
+            .attr("x2",114)
+            .attr("y2",120)
+            .attr("stroke","black")
+            .attr("stroke-width",1);
+        mySvg.append('line')
+            .attr("x1",150)
+            .attr("y1",150)
+            .attr("x2",107)
+            .attr("y2",130)
+            .attr("stroke","black")
+            .attr("stroke-width",1);
+        mySvg.append('line')
+            .attr("x1",150)
+            .attr("y1",150)
+            .attr("x2",103)
+            .attr("y2",140)
+            .attr("stroke","black")
+            .attr("stroke-width",1);
+        
+        mySvg.append('line')
+            .attr("x1",150)
+            .attr("y1",150)
+            .attr("x2",162)
+            .attr("y2",104)
+            .attr("stroke","black")
+            .attr("stroke-width",1);
+        mySvg.append('line')
+            .attr("x1",150)
+            .attr("y1",150)
+            .attr("x2",174)
+            .attr("y2",109)
+            .attr("stroke","black")
+            .attr("stroke-width",1);
+        mySvg.append('line')
+            .attr("x1",150)
+            .attr("y1",150)
+            .attr("x2",186)
+            .attr("y2",120)
+            .attr("stroke","black")
+            .attr("stroke-width",1);
+        mySvg.append('line')
+            .attr("x1",150)
+            .attr("y1",150)
+            .attr("x2",193)
+            .attr("y2",130)
+            .attr("stroke","black")
+            .attr("stroke-width",1);
+        mySvg.append('line')
+            .attr("x1",150)
+            .attr("y1",150)
+            .attr("x2",197)
+            .attr("y2",140)
+            .attr("stroke","black")
+            .attr("stroke-width",1);
+
+        mySvg.append('line')
+            .attr("x1",150)
+            .attr("y1",150)
+            .attr("x2",162)
+            .attr("y2",197)
+            .attr("stroke","black")
+            .attr("stroke-width",1);
+        mySvg.append('line')
+            .attr("x1",150)
+            .attr("y1",150)
+            .attr("x2",174)
+            .attr("y2",191)
+            .attr("stroke","black")
+            .attr("stroke-width",1);
+        mySvg.append('line')
+            .attr("x1",150)
+            .attr("y1",150)
+            .attr("x2",186)
+            .attr("y2",183)
+            .attr("stroke","black")
+            .attr("stroke-width",1);
+        mySvg.append('line')
+            .attr("x1",150)
+            .attr("y1",150)
+            .attr("x2",193)
+            .attr("y2",173)
+            .attr("stroke","black")
+            .attr("stroke-width",1);
+        mySvg.append('line')
+            .attr("x1",150)
+            .attr("y1",150)
+            .attr("x2",197)
+            .attr("y2",160)
+            .attr("stroke","black")
+            .attr("stroke-width",1);
+
+        mySvg.append('line')
+            .attr("x1",150)
+            .attr("y1",150)
+            .attr("x2",138)
+            .attr("y2",197)
+            .attr("stroke","black")
+            .attr("stroke-width",1);
+        mySvg.append('line')
+            .attr("x1",150)
+            .attr("y1",150)
+            .attr("x2",126)
+            .attr("y2",191)
+            .attr("stroke","black")
+            .attr("stroke-width",1);
+        mySvg.append('line')
+            .attr("x1",150)
+            .attr("y1",150)
+            .attr("x2",114)
+            .attr("y2",183)
+            .attr("stroke","black")
+            .attr("stroke-width",1);
+        mySvg.append('line')
+            .attr("x1",150)
+            .attr("y1",150)
+            .attr("x2",108)
+            .attr("y2",173)
+            .attr("stroke","black")
+            .attr("stroke-width",1);
+        mySvg.append('line')
+            .attr("x1",150)
+            .attr("y1",150)
+            .attr("x2",103)
+            .attr("y2",160)
+            .attr("stroke","black")
+            .attr("stroke-width",1);
+        
+    </script>
+</body>
+</html>

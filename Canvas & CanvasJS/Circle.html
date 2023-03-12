@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <title> Circle made using arc() </title>
+<body>
+
+<canvas id="myCanvas" width="200" height="100" >
+Your browser does not support the HTML canvas tag.</canvas>
+
+    <script>
+        var c = document.getElementById("myCanvas");
+        var ctx = c.getContext("2d");
+
+        // Full Circle
+        ctx.beginPath();
+        ctx.arc(95,50,40,0,2*Math.PI);
+        ctx.fillStyle="lightgreen";
+        ctx.fill();
+     
+        // Empty Circle
+        
+        ctx.beginPath();
+        ctx.arc(200, 40, 40, 0, 2*Math.PI);
+        ctx.strokeStyle="red";
+        ctx.stroke();
+
+    </script> 
+
+</body>
+</html

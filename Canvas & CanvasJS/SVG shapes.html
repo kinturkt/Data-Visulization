@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>SVG shapes in D3</title>
+    <script src="https://d3js.org/d3.v7.min.js"></script>
+</head>
+
+<body>
+    <script>
+        var mySvg = d3.select('body')
+            .append('svg')
+            .attr('width', 500)
+            .attr('height', 500);
+        
+        mySvg.append('circle')
+            .attr("cx", 200)
+            .attr("cy", 40)
+            .attr("r", 30)
+            .attr("fill", "blue")
+            .attr("stroke", "hotpink")
+            .attr("stroke-width", 3);
+        mySvg.append('line')
+            .attr("x1",200)
+            .attr("y1",70)
+            .attr("x2",200)
+            .attr("y2",100)
+            .attr("stroke","red")
+            .attr("stroke-width",3)
+        mySvg.append('rect')
+            .attr("x", 150)
+            .attr("y", 100)
+            .attr("width", 100)
+            .attr("height", 100)
+            .attr("fill", "black")
+            .attr("stroke", "red")
+            .attr("stroke-width", 5);
+        mySvg.append('line')
+            .attr("x1",225)
+            .attr("y1",200)
+            .attr("x2",225)
+            .attr("y2",250)
+            .attr("stroke","red")
+            .attr("stroke-width",3)
+        mySvg.append('line')
+            .attr("x1",175)
+            .attr("y1",200)
+            .attr("x2",175)
+            .attr("y2",250)
+            .attr("stroke","red")
+            .attr("stroke-width",3)
+        mySvg.append('line')
+            .attr("x1",150)
+            .attr("y1",125)
+            .attr("x2",125)
+            .attr("y2",100)
+            .attr("stroke","red")
+            .attr("stroke-width",3)
+        mySvg.append('line')
+            .attr("x1",250)
+            .attr("y1",125)
+            .attr("x2",275)
+            .attr("y2",100)
+            .attr("stroke","red")
+            .attr("stroke-width",3)
+    </script>
+</body>
+</html>

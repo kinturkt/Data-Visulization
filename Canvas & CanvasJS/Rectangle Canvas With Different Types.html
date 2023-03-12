@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <canvas id="myCanvas" width="500" height="500" style="border:1px solid black;">
+        Your browser does not support the canvas element.
+    </canvas>
+
+    <script>
+        var canvas = document.getElementById("myCanvas");
+        var ctx = canvas.getContext("2d");
+
+        // Red empty rectangle
+        ctx.strokeStyle = "red";
+        ctx.strokeRect(5, 5, 100, 100);
+        ctx.stroke();
+
+        // Green filled rectangle
+        ctx.fillStyle = "green";
+        ctx.fillRect(150, 5, 100, 100);
+        ctx.stroke();
+
+        // Clear Rectangle within Green Rectangle
+        ctx.clearRect(170, 10, 50, 50);
+
+        // Blue empty rectangle with dashed line
+        ctx.setLineDash([5]);      //Dashed border
+        ctx.strokeStyle="blue";
+        ctx.strokeRect(300, 5, 100, 100);
+        
+    </script>
+</body>
+</html>

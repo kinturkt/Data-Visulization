@@ -1,0 +1,34 @@
+<!-- MAKE A BAR CHART USING CANVAS & JAVASCRIPT -->
+
+<!DOCTYPE HTML>
+<html>
+<head>
+    <script src="https://canvasjs.com/assets/script/canvasjs.min.js"> </script>
+    <script>
+        window.onload = function ()
+        {
+        var chart = new CanvasJS.Chart("chartContainer",
+        {
+        title:{text: "Olympic Medals"},
+        data: [{
+        type:"bar", // Various types can be bar, doughnut, line, pie, area, etc.
+        showInLegend:true,
+        indexLabel: "{name} {y}",
+        dataPoints: [
+            { y: 543, name: "India", exploded: true},
+            { y: 336, name: "China" },
+            { y: 443, name: "France" },
+            { y: 273, name: "Great Britain" },
+            { y: 369, name: "Germany" },
+            { y: 596, name: "Russia" },
+            { y: 618, name: "USA" }]
+            }]
+        });
+        chart.render();
+        }
+    </script>
+</head>
+<body>
+<div id="chartContainer" style="height: 100%; width: 800px;"></div>
+</body>
+</html>

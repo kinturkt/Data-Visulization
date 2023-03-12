@@ -1,0 +1,21 @@
+<!DOCTYPE HTML>
+<html>
+<body>
+    <h2>Advanced Shapes</h2>
+
+    <canvas id="mycanvas" style="border: 1px solid red;" width=380 height=350>
+    Canvas is not supported
+    </canvas>
+
+    <script type="text/javascript">
+        var canvas = document.getElementById("mycanvas");
+        var ctx = canvas.getContext("2d");
+        ctx.fillStyle="grey";
+        ctx.fillRect(10, 10, 100, 50);
+        ctx.translate(70, 70);
+        ctx.fillStyle="pink";
+        ctx.fillRect(10, 10, 100, 50);             // new x & y axis value is 80,80 as 70+10=80. 
+    </script>
+
+</body>
+</html>

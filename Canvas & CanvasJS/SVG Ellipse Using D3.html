@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>SVG shapes in D3</title>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+</head>
+
+<body>
+    <script>
+        var mySvg = d3.select('body')
+            .append('svg')
+            .attr('width', 800)
+            .attr('height', 800);
+
+        mySvg.append("ellipse")
+            .attr("cx",200)
+            .attr("cy",100)
+            .attr("rx",180)
+            .attr("ry",80)
+            .attr("fill","red")
+            .attr("opacity",0.5);
+
+       
+        mySvg.append("text")
+         .attr("x", 150)
+         .attr("y", 100)
+         .attr("stroke", "blue")
+         .text("This is an ellipse!");
+    </script>
+</body>
+
+</html>
