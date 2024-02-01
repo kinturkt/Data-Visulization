@@ -13,8 +13,8 @@ Visit the D3.js website and download the latest version of D3.js (d3.zip). As of
 
 After the download is complete, unzip the file and look for d3.min.js. This is the minified version of the D3.js source code.
 Copy the d3.min.js file and paste it into your project's root folder or any other folder, where you want to keep all the library files.
-Include the d3.min.js file in your HTML page as shown in programs below.
-I have uploaded the canavasjs folder for the reference.
+Include the d3.min.js file in your HTML page as shown in programs below. <br>
+I have also uploaded the canavasjs folder for the reference.
 
 Steps to add Google Charts in your webpage:
 Add this script in your HTML page:
